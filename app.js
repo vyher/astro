@@ -1,3 +1,4 @@
+
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 
@@ -172,6 +173,8 @@ $(".enter").click(function(){
 
     $("html, body").removeClass('no-scroll')
     $(".start").addClass('hide-start')
+
+    $("html, body").scrollTo(0)
 
     setTimeout(function(){
         $(".start").addClass('display-none')
