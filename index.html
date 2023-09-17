@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scroll">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Mars Globe</title>
+    <style>
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="no-scroll">
+
+    <audio id="song" src="/astro_audio.mp3" preload="auto" loop></audio>
+
+    <div class="start">
+        <div class="word">
+            <span>A</span>
+            <span>S</span>
+            <span>T</span>
+            <span>R</span>
+            <span>O</span>
+        </div>
+        <p>We're on a mission to conquer the red planet: Mars. We can't give much details because this is a secret mission, but it will be amazing. Enter at your own risk. Are you ready?
+
+            <br><br> This is an experiment by <a href="https://vyher.com">VYHER Labs</a>.
+        </p>
+        <div class="enter button-action">Enter</div>
+    </div>
+
+    <nav>
+        <div class="nav-logo">
+            <img src="/images/logo.svg" alt="Astro Logo">
+        </div>
+    </nav>
+
+
+
+
+    <a href="#Info" class="learn-more button-action">Learn more</a>
+    <div class="shuttle-container">
+
+    </div>
+
+    <div class="webgl">
+
+    </div>
+
+    <section  class="details">
+
+        <div id="Info" class="details-container">
+                    <h1>Mission 1: Explore Mars</h1>
+        <p>
+            Our sights are set beyond the stars, with the crimson sands of Mars beckoning. As pioneers of the next great frontier, Astro embarks on a daring mission to bridge the gap between Earth and the Red Planet. Join us on this exhilarating journey, as we pen humanity's most thrilling chapter yet, and reshape our destiny in the vast cosmos
+        </p>
+        </div>
+
+
+        <img src="/images/mars.png" loading="lazy" decoding="async" alt="Mars Photos Fake">
+    </section>
+
+
+    <footer>
+        Hand-crafted by <a href="https://vyher.com">VYHER Design.</a>
+    </footer>
+
+    <div class="audio-controls">
+        <button id="playButton">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
+                <path
+                    d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM32,96H72v64H32ZM144,207.64,88,164.09V91.91l56-43.55Zm101.66-61.3a8,8,0,0,1-11.32,11.32L216,139.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L204.69,128l-18.35-18.34a8,8,0,0,1,11.32-11.32L216,116.69l18.34-18.35a8,8,0,0,1,11.32,11.32L227.31,128Z">
+                </path>
+            </svg>
+
+        </button>
+        <button id="pauseButton" style="display:none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
+                <path
+                    d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM32,96H72v64H32ZM144,207.64,88,164.09V91.91l56-43.55Zm54-106.08a40,40,0,0,1,0,52.88,8,8,0,0,1-12-10.58,24,24,0,0,0,0-31.72,8,8,0,0,1,12-10.58ZM248,128a79.9,79.9,0,0,1-20.37,53.34,8,8,0,0,1-11.92-10.67,64,64,0,0,0,0-85.33,8,8,0,1,1,11.92-10.67A79.83,79.83,0,0,1,248,128Z">
+                </path>
+            </svg>
+        </button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.156.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
