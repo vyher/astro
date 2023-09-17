@@ -60,7 +60,7 @@ for (let i = 0; i < 5; i++) {
 
 
 const light = new THREE.PointLight(0xFFFFFF, 1);
-light.position.set(0, 1, 1);
+light.position.set(0, 5, 5);
 scene.add(light);
 
 const ambientLight = new THREE.AmbientLight(0x404040);
@@ -174,11 +174,11 @@ $(".enter").click(function(){
     $("html, body").removeClass('no-scroll')
     $(".start").addClass('hide-start')
 
-    $("html, body").scrollTo(0)
+    $("html, body").animate({ scrollTop: 0 }, "slow");
 
     setTimeout(function(){
         $(".start").addClass('display-none')
-    }, 2000)
+    }, 1500)
 
     const newWidth = webgl.clientWidth;
     const newHeight = window.innerHeight;
